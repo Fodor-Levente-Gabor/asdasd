@@ -90,10 +90,10 @@
         <fieldset>
             <legend>Adatok:</legend>
                 <label for="a">A oldal:</label>
-                <input type="number" name="data" id="a">
+                <input type="number" name="data" id="a" oninput="asd1()">
                 <br>
                 <label for="b">B oldal:</label>
-                <input type="number" name="" id="b">
+                <input type="number" name="" id="b" oninput="asd1()">
                 <br>
                 <label for="c">C oldal:</label>
                 <input type="text" id="c" readonly>
@@ -126,6 +126,10 @@
         document.getElementById("c").value = c
         document.getElementById("c").style.backgroundColor = "green"
         }
+      }
+
+      function asd1(){
+        document.getElementById("c").style.backgroundColor = "red"
       }
     </script>
   </body>
